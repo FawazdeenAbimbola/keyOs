@@ -1,8 +1,10 @@
 *{
     padding:0;
     margin:0;
-
+    overflow: hidden;
+    font-family:'Trebuchet Ms';
 }
+
 .site-header{
     background-color: #292D52;
     min-height: 100vh;
@@ -10,21 +12,95 @@
     position: relative;
 
 }
-.nav-links{
+.text-box{
     position: absolute;
-    
+    transform: translate(-50%, -50%);
+    top:15%;
+    padding: 5px;
+    left:50%;
+    color: white;
+    font-size: 35px;
+}
+.time{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    top:5%;
+    right:5%;
+}
+
+.nav-links{
+    position: absolute;    
     background-color: #202342;
     width:10vh;
     z-index: 2;
-    height: 200vh;
+    height: 100vh;
+}
+.nav-links img{
+    width: 25px;
+    margin: 15px 15px;
+}
+.windows-interface{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:60%;
+    background-color: #292D52;
+    width:78%;
+    left: 60%;
+    height:450px;
+}
+
+.windows-interface .first-app, .windows-interface .second-app, .windows-interface .third-app, .windows-interface .fourth-app, .windows-interface .fifth-app, .windows-interface .six-app{
+    width:250px;
+    padding:15px;
+    background-color: #292D52;
+    height:200px;
+    text-align: center;
+    display: inline-block;
+}
+.windows-interface p{
+    color:white;
+   margin: 5px 0;
+}
+
+.windows-interface img{
+    width: 78px;
+    height:73px; 
+    background-color: #292D52;
+  border: 1px solid #292D52;
+
 }
 
 .nav-bottom{
     position: absolute;
     
     background-color: #2D325A;
-    width:50vh;
-    height: 10vh;
+    width:30vh;
+    height: 5vh;
     bottom:0;
+    border-radius: 15px;
     right:0;
+}
+#logo img{
+    width:40px;
+    padding:3px 13px;
+    background-color: #E03A00;
+}
+#logo img:hover{
+    background-color: #2D325A;
+}
+#battery-full, #home{
+    width: 18px; 
+    height:18px;
+    padding:5px;
+    margin-left: 23px;
+    
+}
+#power-off{ 
+    width:15px; 
+    height:15px;
+    padding:5px;
+    margin-left: 23px;
+
 }
