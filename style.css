@@ -71,7 +71,16 @@
   border: 1px solid #292D52;
 
 }
-/*nav-buttom**/
+.battery-overview{
+    position: absolute; 
+    background-color: #333;
+    width:30vh;
+    height: 20vh;
+        bottom:5%;
+  display:  none;
+    right:0;
+}
+/*nav-buttom**/ 
 .nav-bottom{
     position: absolute;
     
@@ -79,7 +88,7 @@
     width:30vh;
     height: 5vh;
     bottom:0;
-    border-radius: 15px;
+    
     right:0;
 }
 #logo img{
@@ -90,17 +99,61 @@
 #logo img:hover{
     background-color: #2D325A;
 }
-#battery-full, #home{
+#battery-full{
+    background-color: transparent;
+    border: none;
+}
+#battery-full img{
     width: 18px; 
     height:18px;
     padding:5px;
-    margin-left: 23px;
+    margin-left: 19px;
     
 }
-#power-off{ 
+#home img{
+    width: 18px; 
+    height:18px;
+    padding:5px;
+    margin-left: 20px;
+    
+}
+#power-off img{ 
     width:15px; 
     height:15px;
     padding:5px;
-    margin-left: 23px;
+    margin-left: 20px;
 
 }
+#power-off:hover::after{
+    content:"Power off";
+    background-color: #fff;
+    width: 2%;
+    height: 3%;
+    font-size: 12px;
+    color:white;
+    margin-left:2px;
+    display: inline-block;
+    
+
+}
+#battery-full:hover:after{
+    content:"Battery";
+    background-color: transparent;
+   
+    font-size: 12px;
+    color:white;
+    display: inline-block;
+    
+    }
+#home:hover:after{
+    content:"Home";
+    background-color: #fff;
+    width: 2%;
+    height: 3%;
+    font-size: 12px;
+    color:white;
+    margin-left:2px;
+    display: inline-block;
+    
+    
+    }
