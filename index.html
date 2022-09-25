@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeyOs</title>
+    <title>KEYOS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="site-header">
+        
+        <!--Side bar, logos only-->
         <nav>
-            <a href="" id="logo"><img src="assets/logo.svg"/></a>
+            <button id="logo" onclick="showStartMenu()"><img src="assets/logo.svg"/></button>
             <div class="nav-links">
                 <ul>
                     
-                    <li><a href=""><img src="assets/calculator-svgrepo-com.svg" alt=""></a></li>
-                    <li><a href=""><img src="assets/calendar-svgrepo-com.svg" alt=""></a></li>
-                    <li><a href=""><img src="assets/health-care-svgrepo-com.svg" alt=""></a></li>
-                    <li><a href=""><img src="assets/settings-svgrepo-com.svg" alt=""></a></li>
+                    <li><a href="" id="calculator"><img src="assets/calculator-svgrepo-com.svg" alt=""></a></li>
+                    <li><a href="" id="calendar"><img src="assets/calendar-svgrepo-com.svg" alt=""></a></li>
+                    <li><a href="" id="health"><img src="assets/health-care-svgrepo-com.svg" alt=""></a></li>
+                    <li><a href="" id="settings"><img src="assets/settings-svgrepo-com.svg" alt=""></a></li>
                 </ul>
             </div>
         </nav>
+
+        <!--start menu-->
+        <div class="start-menu" id="startMenu">
+            <nav>
+                <div class="startMenuLinks">
+                    <p>All Apps</p>
+                    <ul>
+                        
+                        <li><a href=""><img src="assets/calculator-svgrepo-com.svg" alt="">  Calculator</a></li>
+                        <li><a href=""><img src="assets/calendar-svgrepo-com.svg" alt="">  Calendar</a></li>
+                        <li><a href=""><img src="assets/clock-svgrepo-com.svg" alt="">  Clock</a></li>
+                        <li><a href=""><img src="assets/health-care-svgrepo-com.svg" alt="">  Health</a></li>
+                        <li><a href=""><img src="assets/music-svgrepo-com.svg" alt="">  Music</a></li>
+                        <li><a href=""><img src="assets/settings-svgrepo-com.svg" alt="">   Settings</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <!--Greeting div-->
         <div class="text-box">
             <h2>Good Morning User</h2>
         </div>
+        
+        <!--time and date div-->
         <div class="time">
-            <span>12:00AM</span>
+            <span id="time"></span> <br>
+            <span id="date"> </span>
         </div>
-        <button>
-        </button>
+        
+        <!--Main interface-->
         <div class="windows-interface">
            <div class="first-app">
             <a href=""><img src="assets/calendar-svgrepo-com.svg" alt=""></a>
@@ -56,21 +81,26 @@
             <p>Settings</p>
            </div>
         </div>
+     
+        <!--Battery div-->
         <div class="battery-overview" id="battery-overview">
               <span id="battery-percentage"></span>  
               <span id="charging"></span>
               <span id="progress"></span>
         </div>
-        <div class="nav-bottom">
-           
-               <a href="" id="home"><img src="assets/home.svg" alt="" ></a>        
-              <button id="battery-full" onclick="battery()"><img src="assets/battery-full.svg"></button> 
-               <a href=""id="power-off"><img src="assets/power-off.svg" alt=""></a> 
 
-           
+        <!--bottom navigation bar-->
+        <div class="nav-bottom">      
+               <a href="" id="home"><img src="assets/home.svg" alt="" ></a>        
+               <button id="battery-full" onclick="battery()"><img src="assets/battery-full.svg"></button> 
+               <a href=""id="power-off"><img src="assets/power-off.svg" alt=""></a>     
         </div>
+
     </div>
 </body>
+
 <script src="battery.js"></script>
 <script src="time.js"></script>
+<script src="clock.js"></script>
+<script src="script.js"></script>
 </html>
