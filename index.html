@@ -56,11 +56,16 @@
             <p>Settings</p>
            </div>
         </div>
+        <div class="battery-overview" id="battery-overview">
+              <span id="battery-percentage"></span>  
+              <span id="charging"></span>
+              <span id="progress"></span>
+        </div>
         <div class="nav-bottom">
            
-               <a href=""><img src="assets/home.svg" alt="" id="home"></a> 
-              <a href=""><img src="assets/battery-full.svg" id="battery-full"></a> 
-               <a href=""><img src="assets/power-off.svg" alt="" id="power-off"></a> 
+               <a href="" id="home"><img src="assets/home.svg" alt="" ></a>        
+              <button id="battery-full" onclick="battery()"><img src="assets/battery-full.svg"></button> 
+               <a href=""id="power-off"><img src="assets/power-off.svg" alt=""></a> 
 
            
         </div>
@@ -68,5 +73,4 @@
 </body>
 <script src="battery.js"></script>
 <script src="time.js"></script>
-<script src="script.js"></script>
 </html>
